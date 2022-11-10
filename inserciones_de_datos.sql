@@ -9,5 +9,11 @@ VALUES
   (5,"Nayda Morrison","feugiat.metus@google.com","Ap #247-664 Tellus. St.","1-133-426-3642");
 
 
-
+INSERT INTO `CATEGORIAS` (`ID_CATEGORIA`,`NOMBRE`,`CLAVE`)
+VALUES
+  (1,"otros","otros"),
+  (2,"fisico","fis"),
+  (3,"intangible","int"),
+  (4,"farmaco","farmaco"),
+  (5,"sin categoria","sin cat");
 
