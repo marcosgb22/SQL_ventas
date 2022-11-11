@@ -23,14 +23,14 @@ delimiter ;
 
 DELIMITER //
 CREATE PROCEDURE productos_precios
-(IN palabra CHAR(20))
+(IN valor INT)
 BEGIN
   SELECT COUNT(*) FROM PRODUCTOS
-  WHERE PRECIO >= palabra;
+  WHERE PRECIO >= valor;
 END //
 DELIMITER ; 
 
-CALL productos_precios('españa');
+CALL productos_precios(40);
 
 
 -- lista total de productos
@@ -44,7 +44,7 @@ END //
 DELIMITER;
 
 SET @total = 0;
-CALL total_paises( @total );
+CALL total_productos( @total );
 SELECT @total;
 
 
