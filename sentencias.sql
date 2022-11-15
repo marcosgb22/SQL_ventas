@@ -11,8 +11,8 @@ grant select on `COMPRAS` to 'operacion@localhost';
 
 create user editor@localhost identified by 'passeditor';
 
-grant select, update, insert on `USUARIOS` to 'operacion@localhost';
-grant select, update, insert on `CATEGORIAS` to 'operacion@localhost';
-grant select, update, insert on `PROVEDORES` to 'operacion@localhost';
-grant select, update, insert on `PRODUCTOS` to 'operacion@localhost';
-grant select, update, insert on `COMPRAS` to 'operacion@localhost';
+grant select, update, insert on `USUARIOS` to 'editor@localhost';
+grant select, update, insert on `CATEGORIAS` to 'editor@localhost';
+grant select, update, insert on `PROVEDORES` to 'editor@localhost';
+grant select, update, insert on `PRODUCTOS` to 'editor@localhost';
+grant select, update, insert on `COMPRAS` to 'editor@localhost';
